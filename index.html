@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laurie Snyder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teachers:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    background: #000;
+  }
+
+  body {
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Teachers', Arial, Helvetica, sans-serif;
+  }
+
+  .decorative-motif {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: auto;
+    max-width: 40%;
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 252px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .logo {
+    display: block;
+    margin-bottom: 26px;
+  }
+
+  .name {
+    color: #FFF;
+    font-family: 'Teachers', Arial, Helvetica, sans-serif;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.82px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+  }
+
+  .tagline-link {
+    text-decoration: none;
+    margin-bottom: 22px;
+  }
+
+  .tagline {
+    color: #C8C8C8;
+    font-family: 'Teachers', Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.98px;
+  }
+
+  .linkedin-link img {
+    display: block;
+  }
+
+  @media (max-width: 600px) {
+    .name {
+      font-size: 36px;
+    }
+    .tagline {
+      font-size: 20px;
+    }
+    .content {
+      padding-top: 220px;
+    }
+    .logo {
+      width: 90px;
+      height: auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <img src="images/decorative_motif.png" alt="" class="decorative-motif">
+
+  <div class="content">
+    <img src="images/LS_logo_white_stripe.png" alt="LS Logo" class="logo">
+    <div class="name">Laurie Snyder</div>
+    <a href="https://www.linkedin.com/in/laurie-snyder-design" target="_blank" rel="noopener" class="tagline-link">
+      <div class="tagline">New website coming soon.</div>
+    </a>
+    <a href="https://www.linkedin.com/in/laurie-snyder-design" target="_blank" rel="noopener" class="linkedin-link">
+      <img src="images/LinkedIn_Logo.png" alt="LinkedIn">
+    </a>
+  </div>
+
+</body>
+</html>
