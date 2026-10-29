@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Change Investments – 401(k) Exchange Prototype</title>
+  <meta name="description" content="Interactive prototype of a 401(k) fund exchange flow: sell, buy, review, confirm.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="window">
+    <header class="title-bar">
+      <svg class="title-bar__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor"/></svg>
+      <span class="title-bar__name">Retirement Plan</span>
+      <span class="title-bar__badge">Prototype</span>
+    </header>
+
+    <div class="content">
+      <header class="page-header">
+        <h1 class="page-header__title">Change investments</h1>
+        <p class="page-header__meta">Acme Corp 401(k) Plan&nbsp; · &nbsp;Total balance <span id="total-balance"></span></p>
+      </header>
+
+      <nav class="steps" aria-label="Progress">
+        <ol class="steps__list" id="steps"></ol>
+      </nav>
+
+      <main id="screen" class="screen"></main>
+    </div>
+  </div>
+
+  <div id="announcer" class="visually-hidden" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
